@@ -1,0 +1,75 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero .hero1 {
+  display: flex;
+  gap: 10px;
+  overflow: none;
+
+}
+.hero .hero1 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: -25px;
+  object-fit: cover;
+  border: 1px solid black;
+}
+.hero .hero1 img:first-child {
+  margin-left: 0;
+}
+.hero .hero2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.hero .hero3{
+    display: flex;
+    gap: 20px;
+}
+.hero .hero3 button{
+    color: black;
+    font-weight: 700;
+    width: 150px;
+    height: 40px;
+    border-radius: 75px;
+    border: 1px solid black ;
+}
+.hero .hero3 span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.hero .hero3 img{
+  position: relative;
+    width: 17px;
+    height: 17px;
+    margin-left: 10px;
+    background: transparent;
+}
+.hero .hero4 {
+  display: flex;
+  gap: 40px;
+  height: 250px;
+  overflow: none;
+  align-items: center;
+}
+.hero .hero4 img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  transform: rotate(-8deg);
+}
+.hero4 img:nth-child(1),
+.hero4 img:nth-child(3) {
+  border-radius: 50%;
+  transform: rotate(8deg);
+}

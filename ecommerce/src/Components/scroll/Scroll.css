@@ -1,0 +1,33 @@
+.scroll {
+    display: flex;
+    width: 90%;
+    border: 3px solid red;
+    margin: auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 7s infinite linear;
+    padding-right: 1em;
+}
+.scroll-item{
+    text-align: center;
+    align-content: center;
+    padding: 1em;
+    height: 5em;
+    border-radius: .2em;
+    background-color: lightgreen;
+    flex: 0 0 7em;
+}
+
+@keyframes spin {
+    from{translate: 0;}
+    to{ translate: -100%;}
+}
