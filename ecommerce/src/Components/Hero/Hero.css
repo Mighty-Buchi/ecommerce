@@ -60,6 +60,7 @@
   height: 250px;
   overflow: none;
   align-items: center;
+  /* position: relative; */
 }
 .hero .hero4 img {
   width: 180px;

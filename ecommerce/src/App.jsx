@@ -8,6 +8,9 @@ import Cart from "./Pages/Cart";
 import LoginSignup from "./Pages/LoginSignup";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import banner_men from './assets/banner_mens.png'
+import banner_women from './assets/banner_women.png'
+import banner_kids from './assets/banner_kids.png'
 
 const App = () => {
   useEffect(() => {
@@ -23,9 +26,9 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Shop />} />
-          <Route path="/men" element={<ShopCategory Category="men" />} />
-          <Route path="/women" element={<ShopCategory Category="women" />} />
-          <Route path="/kids" element={<ShopCategory Category="kids" />} />
+          <Route path="/men" element={<ShopCategory banner={banner_men} Category="men" />} />
+          <Route path="/women" element={<ShopCategory banner={banner_women} Category="women" />} />
+          <Route path="/kids" element={<ShopCategory banner={banner_kids} Category="kids" />} />
           <Route path="/product" element={<Products />}>
             <Route path=":productId" element={<Products />} />
           </Route>

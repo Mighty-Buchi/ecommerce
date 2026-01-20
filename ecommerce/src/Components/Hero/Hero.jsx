@@ -9,6 +9,7 @@ import img6 from "../../assets/image6.png";
 import img7 from "../../assets/image7.png";
 import img8 from "../../assets/image8.png";
 import next from "../../assets/next.png";
+import {motion} from 'framer-motion'
 
 const Hero = () => {
   return (
@@ -37,6 +38,7 @@ const Hero = () => {
         <img src={img7} alt="" />
         <img src={img8} alt="" />
       </div>
+      
     </div>
   );
 };
