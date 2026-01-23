@@ -1,0 +1,40 @@
+.shopcategory{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    
+}
+.shopcategory img{
+    width: 82%;
+    margin: auto;
+    display: block;
+    margin-bottom: 1em;
+}
+.shopcategory-text{
+    display: flex;
+    justify-content: space-between;
+    width: 82%;
+    margin: auto;
+}
+.shopcategory-text p span{
+    font-weight: 600;
+}
+.shopcategory-arrow{
+    display: flex;
+    gap: 0.5em;
+    border: 1px solid black;
+    padding: 0.5em;
+    border-radius: 75px;
+    justify-content: center;
+    align-items: center;
+}
+.shopcategory-arrow img{
+    width: 1em;
+    height: 1em;
+}
+.shop-category{
+    margin: 20px 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+}

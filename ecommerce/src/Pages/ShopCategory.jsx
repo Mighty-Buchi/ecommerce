@@ -7,13 +7,13 @@ import Items from '../Components/Items/Items';
 const ShopCategory = (props) => {
   const {all_products} = useContext(ShopContext);
   return (
-    <div>
-      <img src={props.banner} alt="" />
-      <div>
+    <div className='shopcategory'>
+      <img className='imgg' src={props.banner} alt="" />
+      <div className='shopcategory-text'>
         <p><span>Showing 1-12</span> Out of 36 products</p>
-        <div>Sort by <img src={dropdown} alt="" /></div>
+        <div className='shopcategory-arrow'>Sort by <img src={dropdown} alt="" /></div>
       </div>
-      <div>
+      <div className='shop-category'>
         {all_products.map ((item)=>{
             if (props.category===item.category) {
               return <Items key={item.id} image={item.image} name={item.name} new_price={item.new_price} old_price={item.old_price} />

@@ -5,6 +5,7 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
     margin-top: 2em;
+    display: none;
 }
 .scroll2::-webkit-scrollbar {
     display: none;
